@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Tv - Get Unlimited Blog Views</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+</head>
+
+<body>
+    <header>
+        <img src="icon.png" alt="" srcset="" style="display: inline-block; margin-right: 20px;">
+        <h2 style="display: inline-block;">Apna Tv - Get Unlimited Blog Views </h2>
+    </header>
+
+    <div id="formcont">
+        <input id="url" placeholder="enter url here" type="text" name="url" class="btn btn-outline-success">
+        <input type="number" placeholder="No. of views to get" name="" id="no" class="btn btn-outline-info">
+        <button onclick="gv()" class="btn btn-warning">GET</button>
+    </div>
+
+    <br>
+    <div class="container">
+        Counting Your Views Here ...
+        <p id="demo"></p>
+        <div id="here">
+            <h3 class="btn btn-warning btn-lg" >Important</h3><br>
+            <h5 class="btn btn-danger">Please Not Enter Values Greater Than 100 Otherwise your PC may work slow at that time </h5>
+            <h5 class="btn btn-outline-success">If Your PC is Too Fast Then You can Enter Value more Than 100 in one time .</h5>
+        </div>
+    </div>
+    
+    <script>
+        var url = " ";
+        var text = "";
+        var i = 0;
+
+        function gv() {
+            url = document.getElementById("url").value;
+            while (i < document.getElementById("no").value) {
+                window.text += "<br>" + i + '<iframe class="iframe" width="560" height="0" src="' + url +
+                    '" frameborder="0" allow="accelerometer; autoplay="1"; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                i++;
+            }
+            document.getElementById("demo").innerHTML = window.text;
+
+        }
+    </script>
+    <style>
+        header,
+        #formcont {
+            text-align: center;
+            padding: 10px;
+        }
+
+        header {
+            background: antiquewhite;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 20px;
+        }
+        .container {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        footer {
+            position: fixed;
+            text-align: center;
+            display: inline-block;
+            background: aqua;
+            padding: 20px;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 2pc;
+        }
+    </style>
+
+
+
+</body>
+
+</html>
